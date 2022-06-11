@@ -1,0 +1,48 @@
+.heading {
+    font-family: lora;
+    font-weight: 500;
+    /* font-size: 48px; */
+}
+
+.desc {
+    font-family: karla;
+
+}
+
+.rangeSection {
+    width: 50%;
+    margin: auto;
+
+}
+
+.range-slider {
+    padding: 10px;
+}
+
+.emailSuiteSection {
+    background-color: #E5E5E5;
+
+}
+
+.pauboxEmail {
+    background-color: #0247DC;
+    box-shadow: 2px 4px 20px 2px rgba(0, 0, 0, 0.1);
+    font-size: 22px;
+}
+
+.pauboxMarketing,
+.pauboxApi {
+    background-color: #D4D4D4;
+    color: #3D3D3D;
+    font-size: 22px;
+}
+
+.senderSection {
+    background-color: #0247DC;
+
+}
+
+.senderTitle {
+    font-family: lora;
+    font-weight: 500;
+}

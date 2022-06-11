@@ -1,0 +1,49 @@
+/* .card{
+    padding-top: 78px;
+} */
+.popular{
+    font-family: karla;
+    font-weight: 700;
+    font-size: 12px;
+    padding: 5px 50px;
+    color:#0247DC;
+    background-color: #DBE5FC;
+    border-radius: 30px;
+}
+.title{
+    font-family: lora;
+    font-weight: 500;
+    color:#0247DC;
+}
+.pricing{
+    font-family: karla;
+    font-weight: 700;
+    font-size: 64px;
+}
+.packageHeader{
+    border-bottom: 2px solid #E9E9E9;
+   
+}
+.packageContent{
+    height:300px;
+    border-bottom: 2px solid #E9E9E9;
+}
+
+
+.includeItem{
+    border-bottom: 1px dashed #B3B3B3;
+  
+    
+    
+}
+.checkmark{
+    color:#0247DC;
+    background-color: #DBE5FC;;
+    border-radius: 50%;
+    
+}
+
+.button{
+    background-color: #0247DC;
+    font-weight: 500;
+}
