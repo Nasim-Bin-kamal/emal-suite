@@ -4,6 +4,29 @@ import SinglePackage from '../SinglePackage/SinglePackage';
 import RangeSlider from 'react-bootstrap-range-slider';
 import styles from './EmailSuite.module.css';
 
+const emailPackages = [
+    {
+        packageTitle: 'Standard',
+        price: '29',
+        description: 'For organizations that need no-fuss HIPAA compliant email encryption',
+        facilities: ['14 day free trial', 'Default encryption', 'HITRUST CSF certified']
+    },
+    {
+        packageTitle: 'Plus',
+        price: '59',
+        description: 'For organizations that also need inbound email security protection',
+        facilities: ['14 day free trial', 'All features of Standard', 'ExecProtect', 'Zero Trust Email'],
+        packageType: 'Most Popular'
+    },
+    {
+        packageTitle: 'Premium',
+        price: '79',
+        description: 'For organizations with advanced security and workflow automation needs',
+        facilities: ['14 day free trial', 'All features of Standard & Plus', 'Email DLP', 'Email archiving', 'Workflow automation (optional add-on)']
+    }
+
+];
+
 const EmailSuite = () => {
     const [value, setValue] = useState(0);
 
@@ -36,10 +59,9 @@ const EmailSuite = () => {
                 <div className={`mx-auto text-center text-white p-4 ${styles.senderSection}`}>
                     <h2 className={styles.senderTitle}>How many senders do you have?</h2>
                     <p className=''>Find your cost below</p>
-                    <div className={styles.rangeSection}>
+                    <div className={`py-3 ${styles.rangeSection}`}>
                         <RangeSlider
-                            className={styles.slider}
-                            width="100px"
+                            className={`${styles.slider}`}
                             value={value}
                             onChange={changeEvent => setValue(changeEvent.target.value)}
                         />
@@ -47,9 +69,9 @@ const EmailSuite = () => {
                 </div>
                 <div className='mx-auto pb-5'>
                     <CardGroup >
-                        <SinglePackage />
-                        <SinglePackage />
-                        <SinglePackage />
+                        {
+                            emailPackages?.map((singlePackage, p_id) => (<SinglePackage key={p_id} singlePackage={singlePackage} />))
+                        }
                     </CardGroup>
                 </div>
             </Container>

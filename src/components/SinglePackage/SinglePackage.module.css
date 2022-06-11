@@ -2,6 +2,8 @@
     padding-top: 78px;
 } */
 .popular{
+    position: absolute;
+    top:5%;
     font-family: karla;
     font-weight: 700;
     font-size: 12px;
@@ -25,7 +27,7 @@
    
 }
 .packageContent{
-    height:300px;
+    height:350px;
     border-bottom: 2px solid #E9E9E9;
 }
 
